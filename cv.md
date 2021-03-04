@@ -18,6 +18,14 @@ I really want to participate and make a contribution in human history.
 * JavaScript
 * Git
 
+```
+Reversed Strings. Complete the solution so that it reverses the string passed into it.
+
+function solution(str){
+  return str.split('').reverse().join('');  
+}
+
+```
 *Education:*
 
 CSS - The Complete Guide 2020 (incl. Flexbox, Grid & Sass) / Academind
