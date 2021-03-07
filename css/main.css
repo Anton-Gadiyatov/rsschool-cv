@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  color: #363636;
+}
+
+.header {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.header__photo {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 40%;
+  background-color: #2c323d;
+}
+
+.cv-photo {
+  border-radius: 50%;
+}
+
+.header__title {
+  width: 60%;
+  padding-top: 50px;
+  padding-left: 20px;
+}
+
+.header__title h1 {
+  font-size: 50px;
+}
+
+.header__title p {
+  font-size: 25px;
+}
