@@ -3,6 +3,8 @@
 }
 
 body {
+  padding: 0;
+  margin: 0;
   width: 100%;
   color: #363636;
 }
@@ -62,7 +64,7 @@ body {
 
 .side-info__contact {
   background-color: #343945;
-height: 33%;
+height: 34%;
 }
 
 .side__title {
@@ -115,4 +117,20 @@ height: 33%;
   width: 15px;
   height: 100%;
   background-color: #f2c100;
+}
+
+.footer {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #ebebeb;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.logo {
+width: 30px;
 }
