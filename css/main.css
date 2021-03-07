@@ -1,6 +1,4 @@
-* {
-  box-sizing: border-box;
-}
+* { box-sizing: border-box; }
 
 body {
   padding: 0;
@@ -10,45 +8,39 @@ body {
 }
 
 .header {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
 }
 
 .header__photo {
-  display: flex;
-  justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
   margin: 0;
+  display: flex;
   width: 40%;
+  justify-content: center;
   background-color: #2c323d;
 }
 
-.cv-photo {
-  border-radius: 50%;
-}
+.cv-photo { border-radius: 50%; }
 
 .header__title {
-  width: 60%;
   padding-top: 50px;
   padding-left: 20px;
+  width: 60%;
 }
 
-.header__title h1 {
-  font-size: 50px;
-}
+.header__title h1 { font-size: 50px; }
 
-.header__title p {
-  font-size: 25px;
-}
+.header__title p { font-size: 25px; }
 
 .main {
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
   width: 90%;
-  margin-right: auto;
-  margin-left: auto;
   height: 100%;
 }
 
@@ -58,13 +50,11 @@ body {
   width: 40%;
   color: white;
 }
-.side-info-wrapper section > p {
-  padding-left: 25px;
-}
+.side-info-wrapper section > p { padding-left: 25px; }
 
 .side-info__contact {
-  background-color: #343945;
   height: 34%;
+  background-color: #343945;
 }
 
 .side__title {
@@ -84,13 +74,13 @@ body {
 }
 
 .side-info__education {
-  background-color: #2c323d;
   height: 33%;
+  background-color: #2c323d;
 }
 
 .side-info__english {
-  background-color: #343945;
   height: 33%;
+  background-color: #343945;
 }
 
 .main-wrapper {
@@ -99,9 +89,7 @@ body {
   width: 60%;
 }
 
-.main-wrapper section > p {
-  padding-left: 25px;
-}
+.main-wrapper section > p { padding-left: 25px; }
 
 .main__title {
   position: relative;
@@ -120,15 +108,15 @@ body {
 }
 
 .footer {
-  display: flex;
-  width: 90%;
-  margin-right: auto;
-  margin-left: auto;
-  background-color: #ebebeb;
-  justify-content: space-between;
-  align-items: center;
   padding-left: 25px;
   padding-right: 25px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebeb;
 }
 
 .logo {
