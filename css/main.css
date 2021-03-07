@@ -19,6 +19,7 @@ body {
   justify-content: center;
   padding-top: 20px;
   padding-bottom: 20px;
+  margin: 0;
   width: 40%;
   background-color: #2c323d;
 }
@@ -39,4 +40,79 @@ body {
 
 .header__title p {
   font-size: 25px;
+}
+
+.main {
+  display: flex;
+  width: 90%;
+  margin-right: auto;
+  margin-left: auto;
+  height: 100%;
+}
+
+.side-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  color: white;
+}
+.side-info-wrapper section > p {
+  padding-left: 25px;
+}
+
+.side-info__contact {
+  background-color: #343945;
+height: 33%;
+}
+
+.side__title {
+  position: relative;
+  padding-left: 30px;
+  display: block;
+  background-color: #424753;
+}
+
+.side__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #f2c100;
+}
+
+.side-info__education {
+  background-color: #2c323d;
+  height: 33%;
+}
+
+.side-info__english {
+  background-color: #343945;
+  height: 33%;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+}
+
+.main-wrapper section > p {
+  padding-left: 25px;
+}
+
+.main__title {
+  position: relative;
+  padding-left: 30px;
+  display: block;
+  background-color: #ebebeb;
+}
+
+.main__title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 15px;
+  height: 100%;
+  background-color: #f2c100;
 }
