@@ -45,3 +45,16 @@ const scrollActiveSectionHandler = () => {
 };
 
 window.addEventListener("scroll", scrollActiveSectionHandler);
+
+const scrollTop = () => {
+  const scrollTop = document.querySelector(`#scroll-top`);
+  const scrollY = window.pageYOffset;
+
+  if (scrollY >= 200) {
+    scrollTop.classList.add('show-scroll');
+  } else {
+    scrollTop.classList.remove('show-scroll');
+  }
+}
+
+window.addEventListener("scroll", scrollTop);
