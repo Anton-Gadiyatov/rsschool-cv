@@ -14,6 +14,7 @@
     <!-- BOX ICONS END-->
 
     <link rel="stylesheet" href="./src/css/main.css" />
+    <script src="./src/js/html2pdf.bundle.min.js" defer></script>
     <script src="./src/js/script.js" defer></script>
   </head>
   <body>
@@ -72,8 +73,8 @@
         </div>
       </nav>
     </header>
-    <main class="l-main bd-container bd">
-      <div class="cv">
+    <main class="l-main bd-container">
+      <div class="cv" id="area-cv">
         <div class="cv__left">
           <section class="home" id="home">
             <div class="home__container section bd-grid">
@@ -89,7 +90,7 @@
                 <div>
                   <a
                     download=""
-                    href="./src/pdf/resumeCv.pdf"
+                    href="./src/pdf/CV_Gadiyatov_Anton.pdf"
                     class="home__button-pdf"
                     >Download</a
                   >
@@ -112,12 +113,18 @@
               </div>
             </div>
 
-            <i class='bx bx-moon change-theme'  title="Theme" id="theme-button"></i>
+            <i
+              class="bx bx-moon change-theme"
+              title="Theme"
+              id="theme-button"
+            ></i>
 
-
+            <i
+              class="bx bx-download generate-pdf"
+              title="Generate PDF"
+              id="cv-button"
+            ></i>
           </section>
-
-
 
           <section class="section social">
             <h2 class="section-title">SOCIAL</h2>
@@ -138,10 +145,7 @@
             <h2 class="section-title">Profile</h2>
 
             <p class="profile__description">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit
-              hic, maxime quos nostrum minima, exercitationem aliquid cupiditate
-              enim ullam assumenda ea a eos voluptate voluptatum quisquam sunt
-              doloribus, recusandae quia!
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
             </p>
           </section>
 
@@ -201,11 +205,11 @@
                 <li class="skills__name">
                   <span class="skills__circle"></span> Sass
                 </li>
+              </ul>
+              <ul class="skills__data">
                 <li class="skills__name">
                   <span class="skills__circle"></span> JavaScript
                 </li>
-              </ul>
-              <ul class="skills__data">
                 <li class="skills__name">
                   <span class="skills__circle"></span> React
                 </li>

@@ -76,3 +76,34 @@ themeBtn.addEventListener('click', () => {
   localStorage.setItem('selected-theme', getCurrentTheme());
   localStorage.setItem('selected-icon', getCurrentIcon());
 })
+
+const scaleCv = () => {
+  document.body.classList.add('scale-cv');
+}
+
+const removeScaleCv = () => {
+  document.body.classList.remove('scale-cv');
+}
+
+let areaCv = document.querySelector('#area-cv');
+
+let cvGeneratePdfBtn = document.querySelector('#cv-button')
+
+let opt = {
+  margin:       0,
+  filename:     'CV_Gadiyatov_Anton.pdf',
+  image:        { type: 'jpeg', quality: 0.98 },
+  html2canvas:  { scale: 4 },
+  jsPDF:        { format: 'a4', orientation: 'portrait' }
+};
+
+
+const generateResume = () => {
+  html2pdf(areaCv, opt);
+}
+
+cvGeneratePdfBtn.addEventListener('click', () => {
+  scaleCv();
+  generateResume();
+  setTimeout(removeScaleCv, 5000);
+})
