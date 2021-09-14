@@ -22,7 +22,7 @@ navLinks.forEach((link) => {
   link.addEventListener("click", showMenuHandler);
 });
 
-const sections = document.querySelectorAll(`#section[id]`);
+const sections = document.querySelectorAll(`section[id]`);
 
 const scrollActiveSectionHandler = () => {
   const scrollY = window.pageYOffset;
@@ -32,13 +32,13 @@ const scrollActiveSectionHandler = () => {
     const sectionTop = section.offsetTop - 50;
     sectionId = section.getAttribute("id");
 
-    if (scrollY > sectionTop && scrollY < sectionTop + sectionHeight) {
+    if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
       document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .querySelector(`.nav__menu a[href*="#${sectionId}"]`)
         .classList.add("active-link");
     } else {
       document
-        .querySelector(".nav__menu a[href*=" + sectionId + "]")
+        .querySelector(`.nav__menu a[href*="#${sectionId}"]`)
         .classList.remove("active-link");
     }
   });
