@@ -330,6 +330,11 @@ img {
   margin-right: 0.75rem;
 }
 
+.certeficate__title {
+  font-size: var(--h3-font-size);
+  margin-bottom: var(--mb-1);
+}
+
 .show-menu {
   bottom: var(--header-height);
 }
