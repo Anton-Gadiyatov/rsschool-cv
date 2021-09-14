@@ -51,10 +51,28 @@ const scrollTop = () => {
   const scrollY = window.pageYOffset;
 
   if (scrollY >= 200) {
-    scrollTop.classList.add('show-scroll');
+    scrollTop.classList.add("show-scroll");
   } else {
-    scrollTop.classList.remove('show-scroll');
+    scrollTop.classList.remove("show-scroll");
   }
-}
+};
 
 window.addEventListener("scroll", scrollTop);
+
+const themeBtn = document.querySelector("#theme-button");
+const darkTheme = 'dark-theme';
+const iconTheme = 'bx-sun';
+
+const selectedTheme = localStorage.getItem('selected-theme');
+const selectedIcon = localStorage.getItem('selected-icon');
+
+const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
+const getCurrentIcon = () => themeBtn.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+
+themeBtn.addEventListener('click', () => {
+  document.body.classList.toggle(darkTheme);
+  themeBtn.classList.toggle(iconTheme);
+
+  localStorage.setItem('selected-theme', getCurrentTheme());
+  localStorage.setItem('selected-icon', getCurrentIcon());
+})
