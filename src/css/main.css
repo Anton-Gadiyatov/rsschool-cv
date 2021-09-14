@@ -256,6 +256,10 @@ img {
   margin-right: .25rem;
 }
 
+.profile__description {
+  text-align: center;
+}
+
 .show-menu {
   bottom: var(--header-height);
 }
