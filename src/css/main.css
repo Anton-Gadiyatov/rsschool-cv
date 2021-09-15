@@ -81,7 +81,6 @@ body.dark-theme {
   color: var(--title-color);
 }
 
-
 body.scale-cv {
   --h1-font-size: 0.938rem;
   --h2-font-size: 0.938rem;
@@ -446,7 +445,8 @@ img {
 }
 
 .education__title,
-.experience__title {
+.experience__title,
+.project__title {
   font-size: var(--h3-font-size);
 }
 
@@ -457,6 +457,24 @@ img {
 }
 
 .education__years {
+  font-size: var(--smaller-font-size);
+}
+
+.project__title {
+  margin-bottom: var(--mb-1);
+}
+
+.project__link {
+  color: var(--text-color);
+  cursor: pointer;
+}
+
+.project__link:hover {
+  color: var(--title-color);
+}
+
+.project__technologies {
+  color: var(--text-color-light);
   font-size: var(--smaller-font-size);
 }
 
@@ -489,9 +507,19 @@ img {
   margin-left: var(--mb-1);
 }
 
-.certeficate__title {
+.certificate__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1);
+}
+
+.certificate__description {
+  text-decoration: none;
+  color: var(--text-color-light);
+  cursor: pointer;
+}
+
+.certeficate__description:hover {
+  color: var(--title-color);
 }
 
 .references__content {
@@ -526,6 +554,34 @@ img {
   font-size: 1.5rem;
   color: var(--text-color-light);
   margin-bottom: 0.25rem;
+}
+
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+  padding-top: .75rem;
+  padding-left: 1rem;
+  margin-top: 2rem;
+  border-top: solid 1px var(--text-color-light);
+}
+
+.footer__links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer__logo-git {
+  height: 30px;
+  width: 30px;
+}
+
+.footer__logo-rs {
+  height: 30px;
+  width: 60px;
 }
 
 .scrolltop {
@@ -621,6 +677,10 @@ img {
     display: none;
   }
 
+  .projects__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .references__container {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -633,5 +693,15 @@ img {
   .interests__container {
     grid-template-columns: repeat(4, max-content);
     column-gap: 3.5rem;
+  }
+
+  .footer {
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    border-top: none;
+    padding-top: 0;
+    background-color: var(--container-color);
+    box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
   }
 }
