@@ -60,50 +60,92 @@ const scrollTop = () => {
 window.addEventListener("scroll", scrollTop);
 
 const themeBtn = document.querySelector("#theme-button");
-const darkTheme = 'dark-theme';
-const iconTheme = 'bx-sun';
+const darkTheme = "dark-theme";
+const iconTheme = "bx-sun";
 
-const selectedTheme = localStorage.getItem('selected-theme');
-const selectedIcon = localStorage.getItem('selected-icon');
+const selectedTheme = localStorage.getItem("selected-theme");
+const selectedIcon = localStorage.getItem("selected-icon");
 
-const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dark' : 'light';
-const getCurrentIcon = () => themeBtn.classList.contains(iconTheme) ? 'bx-moon' : 'bx-sun';
+const getCurrentTheme = () =>
+  document.body.classList.contains(darkTheme) ? "dark" : "light";
+const getCurrentIcon = () =>
+  themeBtn.classList.contains(iconTheme) ? "bx-moon" : "bx-sun";
 
-themeBtn.addEventListener('click', () => {
+themeBtn.addEventListener("click", () => {
   document.body.classList.toggle(darkTheme);
   themeBtn.classList.toggle(iconTheme);
 
-  localStorage.setItem('selected-theme', getCurrentTheme());
-  localStorage.setItem('selected-icon', getCurrentIcon());
-})
+  localStorage.setItem("selected-theme", getCurrentTheme());
+  localStorage.setItem("selected-icon", getCurrentIcon());
+});
 
 const scaleCv = () => {
-  document.body.classList.add('scale-cv');
-}
-
-const removeScaleCv = () => {
-  document.body.classList.remove('scale-cv');
-}
-
-let areaCv = document.querySelector('#area-cv');
-
-let cvGeneratePdfBtn = document.querySelector('#cv-button')
-
-let opt = {
-  margin:       0,
-  filename:     'CV_Gadiyatov_Anton.pdf',
-  image:        { type: 'jpeg', quality: 0.98 },
-  html2canvas:  { scale: 4 },
-  jsPDF:        { format: 'a4', orientation: 'portrait' }
+  document.body.classList.add("scale-cv");
 };
 
+const removeScaleCv = () => {
+  document.body.classList.remove("scale-cv");
+};
+
+let areaCv = document.querySelector("#area-cv");
+
+let cvGeneratePdfBtn = document.querySelector("#cv-button");
+
+let opt = {
+  margin: 0,
+  filename: "CV_Gadiyatov_Anton.pdf",
+  image: { type: "jpeg", quality: 0.98 },
+  html2canvas: { scale: 4 },
+  jsPDF: { format: "a4", orientation: "portrait" },
+};
 
 const generateResume = () => {
   html2pdf(areaCv, opt);
-}
+};
 
-cvGeneratePdfBtn.addEventListener('click', () => {
+cvGeneratePdfBtn.addEventListener("click", () => {
   scaleCv();
   generateResume();
   setTimeout(removeScaleCv, 5000);
-})
+});
+
+const languageElement = document.querySelector(".change-language");
+const languageElementLanguageContent = document.querySelector(
+  ".change-language__language"
+);
+const languageBtn = document.querySelector("#language-button");
+const languageIcon = "bx-toggle-right";
+
+const selectedLanguage = localStorage.getItem("selected-language");
+const selectedLanguageIcon = localStorage.getItem("selected-language-icon");
+
+const getCurrentLanguage = () =>
+  languageElementLanguageContent.textContent === "RU" ? "RU" : "ENG";
+const getCurrentLanguageIcon = () =>
+  languageBtn.classList.contains(languageIcon)
+    ? "bx-toggle-right"
+    : "bx-toggle-left";
+
+languageElement.addEventListener("click", () => {
+  languageElementLanguageContent.textContent =
+    languageElementLanguageContent.textContent === "RU" ? "ENG" : "RU";
+  languageBtn.classList.toggle(languageIcon);
+
+  localStorage.setItem("selected-language", getCurrentLanguage());
+  localStorage.setItem("selected-language-icon", getCurrentLanguageIcon());
+});
+
+if (selectedLanguageIcon === languageIcon) {
+  languageBtn.classList.toggle(languageIcon);
+}
+
+if (selectedLanguage === "RU") {
+  languageElementLanguageContent.textContent = "RU";
+} else {
+  languageElementLanguageContent.textContent = "ENG";
+}
+
+if (selectedTheme === "dark") {
+  document.body.classList.toggle(darkTheme);
+  themeBtn.classList.toggle(iconTheme);
+}
