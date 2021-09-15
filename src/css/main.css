@@ -70,14 +70,14 @@ body.dark-theme {
   align-items: center;
   color: var(--text-color);
   font-size: 1.2rem;
+  cursor: pointer;
 }
 
 .change-language__button {
   margin-right: var(--mb-1);
-  cursor: pointer;
 }
 
-.change-language__button:hover {
+.change-language:hover {
   color: var(--title-color);
 }
 
@@ -556,6 +556,9 @@ img {
   margin-bottom: 0.25rem;
 }
 
+.code {
+  display: none;
+}
 
 .footer {
   display: flex;
@@ -695,6 +698,10 @@ img {
     column-gap: 3.5rem;
   }
 
+  .code {
+    display: block;
+  }
+
   .footer {
     max-width: 968px;
     margin-left: auto;
@@ -704,4 +711,5 @@ img {
     background-color: var(--container-color);
     box-shadow: 0 0 8px rgba(13, 12, 12, 0.15);
   }
+
 }
