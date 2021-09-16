@@ -114,7 +114,7 @@ body.scale-cv {
 }
 
 .scale-cv .section {
-  padding: 1.5rem 0 0.8rem;
+  padding: .5rem 0;
 }
 
 .scale-cv .section-title {
@@ -518,7 +518,7 @@ img {
   cursor: pointer;
 }
 
-.certeficate__description:hover {
+.certificate__description:hover {
   color: var(--title-color);
 }
 
