@@ -1,486 +1,93 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" >
-    <meta http-equiv="x-ua-compatible" content="ie=edge" >
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gadiyatov Anton cv</title>
-
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
-    >
-
-    <link rel="stylesheet" href="./src/css/main.css" >
-    <link
-      rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
-    >
-    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
-    <script>
-      hljs.initHighlightingOnLoad();
-    </script>
-    <script src="./src/js/html2pdf.bundle.min.js" defer></script>
-    <script src="./src/js/script.js" defer></script>
+    <link rel="stylesheet" href="./css/main.css">
   </head>
   <body>
-    <header class="l-header" id="header">
-      <nav class="nav bd-container">
-        <a href="#" class="nav__logo">Anton</a>
-
-        <div class="nav__menu" id="nav-menu">
-          <ul class="nav__list">
-            <li class="nav__item">
-              <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home nav__icon"></i>Home
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#profile" class="nav__link">
-                <i class="bx bx-user nav__icon"></i>Profile
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#education" class="nav__link">
-                <i class="bx bx-book nav__icon"></i>Education
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#skills" class="nav__link">
-                <i class="bx bx-receipt nav__icon"></i>Skills
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#experience" class="nav__link">
-                <i class="bx bx-briefcase-alt nav__icon"></i>Experience
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#projects" class="nav__link">
-                <i class="bx bxl-codepen nav__icon"></i>Projects
-              </a>
-            </li>
-
-            <li class="nav__item">
-              <a href="#certificates" class="nav__link">
-                <i class="bx bx-award nav__icon"></i>Certificates
-              </a>
-            </li>
-
-            <!-- <li class="nav__item">
-              <a href="#references" class="nav__link">
-                <i class="bx bx-link-external nav__icon"></i>References
-              </a>
-            </li> -->
-          </ul>
-        </div>
-
-        <div class="nav__toggle" id="nav-toggle">
-          <i class="bx bx-grid-alt"></i>
-        </div>
-      </nav>
+    <header class="header">
+      <figure class="header__photo">
+        <img class="cv-photo" src="./img/cv-photo.jpg" alt="cv photo">
+      </figure>
+      <div class="header__title">
+        <h1>Anton Gadiyatov</h1>
+        <p>Junior Front-end developer</p>
+      </div>
     </header>
-    <main class="l-main bd-container">
-      <div class="cv" id="area-cv">
-        <div class="cv__left">
-          <section class="home" id="home">
-            <div class="home__container section bd-grid">
-              <div class="home__data bd-grid">
-                <img
-                  src="./src/img/cv-photo.jpg"
-                  alt="cv-photo"
-                  class="home__img"
-                >
-                <h1 class="home__title">ANTON <b>GADIYATOV</b></h1>
-                <h3 class="home__profession">Front-end developer</h3>
-
-                <div>
-                  <!-- <a
-                    download=""
-                    href="./src/pdf/CV_Gadiyatov_Anton.pdf"
-                    class="home__button-pdf"
-                    >Download</a
-                  > -->
-                </div>
-              </div>
-              <ul class="home__adress bd-grid">
-                <li class="home__information">
-                  <i class="bx bx-map home__icon"></i> Ufa, Russia
-                </li>
-                <li class="home__information">
-                  <i class="bx bx-envelope home__icon"></i>
-                  gadiyatov.an.work@gmail.com
-                </li>
-                <li class="home__information">
-                  <i class="bx bx-phone home__icon"></i> +7 922-680-8730
-                </li>
-                <li class="home__information">
-                  <i class="bx bx-phone home__icon"></i> +7 904-631-5201
-                </li>
-              </ul>
-            </div>
-
-            <i
-              class="bx bx-moon change-theme"
-              title="Theme"
-              id="theme-button"
-            ></i>
-
-            <i
-              class="bx bx-download generate-pdf"
-              title="Generate PDF"
-              id="cv-button"
-            ></i>
-
-            <div class="change-language">
-              <i
-                class="bx bx-toggle-left change-language__button ru"
-                title="Change language"
-                id="language-button"
-              ></i>
-              <span class="change-language__language">RU</span>
-            </div>
-          </section>
-
-          <section class="section social">
-            <h2 class="section-title">SOCIAL</h2>
-            <div class="social__container bd-grid">
-              <a
-                href="https://github.com/anton-gadiyatov/"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-github social__icon"></i>
-                github.com/anton-gadiyatov
-              </a>
-              <a
-                href="https://t.me/gadiyatov"
-                target="_blank"
-                class="social__link"
-              >
-                <i class="bx bxl-telegram social__icon"></i> t.me/gadiyatov
-              </a>
-            </div>
-          </section>
-
-          <section class="section profile" id="profile">
-            <h2 class="section-title">Profile</h2>
-
-            <p class="profile__description">
-              Novice frontend-developer with technical and economic education.
-              Confident knowledge of HTML, CSS/SCSS, JavaScript.
+    <main class="main">
+      <div class="side-info-wrapper">
+        <section class="side-info__contact">
+          <h2 class="side__title">Contact</h2>
+          <ul>
+            <li>email: gadiyatov.an@gmail.com</li>
+            <li>telegram: @gadiyatov</li>
+          </ul>
+        </section>
+        <section class="side-info__education">
+          <h2 class="side__title">Education</h2>
+          <p>
+            CSS - The Complete Guide 2020 (incl. Flexbox, Grid & Sass) /
+            Academind
+          </p>
+        </section>
+        <section class="side-info__english">
+          <h2 class="side__title">English</h2>
+          <p>B1</p>
+        </section>
+      </div>
+      <div class="main-wrapper">
+        <section class="main__profile">
+          <h2 class="main__title">Profile</h2>
+          <blockquote>
+            <p>
+              “A journey of a thousand miles begins with a single step.” Lao-Tzu
             </p>
-          </section>
-
-          <section class="section education" id="education">
-            <h2 class="section-title">Education</h2>
-
-            <div class="education__container bd-grid">
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">Front-end developer</h3>
-                  <span class="education__studies">Self taught</span>
-                  <span class="education__years">2020 -</span>
-                </div>
-              </div>
-
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <span class="education__line"></span>
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">SPECIALIST OF ECONOMIC</h3>
-                  <span class="education__studies"
-                    >The Bonch-Bruevich St. Petersburg State University of
-                    Telecommunications</span
-                  >
-                  <span class="education__years">2009 - 2013</span>
-                </div>
-              </div>
-
-              <div class="education__content">
-                <div class="education__time">
-                  <span class="education__rounder"></span>
-                  <!-- <span class="education__line"></span> -->
-                </div>
-                <div class="education__data bd-grid">
-                  <h3 class="education__title">COMMUNICATION TECHNICIAN</h3>
-                  <span class="education__studies"
-                    >Saint-Petersburg College of Telecommunications of The
-                    Bonch-Bruevich Saint-Petersburg State University of
-                    Telecommunications</span
-                  >
-                  <span class="education__years">2007 - 2009</span>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="section skills" id="skills">
-            <h2 class="section-title">Skills</h2>
-
-            <div class="skills__content bd-grid">
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Html
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Css
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> Sсss
-                </li>
-              </ul>
-              <ul class="skills__data">
-                <li class="skills__name">
-                  <span class="skills__circle"></span> JavaScript
-                </li>
-                <li class="skills__name">
-                  <span class="skills__circle"></span> React
-                </li>
-              </ul>
-            </div>
-          </section>
-        </div>
-        <div class="cv__right">
-          <section class="section experience" id="experience">
-            <h2 class="section-title">Experience</h2>
-
-            <div class="experience__container bd-grid">
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span>
-                </div>
-                <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Senior engineer</h3>
-                  <span class="experience__company"
-                    >From 2017 to 2018 | RIRT</span
-                  >
-                  <p class="experience__description">
-                    Tests development for automatic circuit boards testing.
-                    Automatiс and manual circuit boards testing. Periodic
-                    product testing. Document management.
-                  </p>
-                </div>
-              </div>
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <span class="experience__line"></span>
-                </div>
-                <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Engineer</h3>
-                  <span class="experience__company"
-                    >From 2014 to 2017 | RIRT</span
-                  >
-                  <p class="experience__description">
-                    Automatiс and manual circuit boards testing. Periodic
-                    product testing. Document management.
-                  </p>
-                </div>
-              </div>
-              <div class="experience__content">
-                <div class="experience__time">
-                  <span class="experience__rounder"></span>
-                  <!-- <span class="experience__line"></span> -->
-                </div>
-                <div class="experience__data bd-grid">
-                  <h3 class="experience__title">Senior technician</h3>
-                  <span class="experience__company"
-                    >From 2009 to 2014 | RIRT</span
-                  >
-                  <p class="experience__description">
-                    Manual circuit boards testing. Periodic product testing.
-                  </p>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section class="section projects" id="projects">
-            <h2 class="section-title">Projects</h2>
-
-            <div class="projects__container bd-grid">
-              <div class="projects__content">
-                <a
-                  href="https://rolling-scopes-school.github.io/anton-gadiyatov-JSFE2021Q1/online-zoo/index.html"
-                  target="_blank"
-                  class="project__link"
-                >
-                  <h3 class="project__title">Online-zoo</h3>
-
-                  <p class="project__description">Online-zoo website</p>
-                </a>
-                <p class="project__technologies">Html Scss</p>
-              </div>
-              <div class="projects__content">
-                <a
-                  href="https://rolling-scopes-school.github.io/anton-gadiyatov-JSFEPRESCHOOL/museum/"
-                  target="_blank"
-                  class="project__link"
-                >
-                  <h3 class="project__title">Louvre museum</h3>
-                  <p class="project__description">Louvre museum website</p>
-                </a>
-                <p class="project__technologies">Html Css</p>
-              </div>
-              <div class="projects__content">
-                <a
-                  href="https://rolling-scopes-school.github.io/anton-gadiyatov-JSFEPRESCHOOL/vertical-slider/"
-                  target="_blank"
-                  class="project__link"
-                >
-                  <h3 class="project__title">Vertical slider</h3>
-
-                  <p class="project__description">Vertical slider project</p>
-                </a>
-                <p class="project__technologies">Html Css JavaScript</p>
-              </div>
-              <div class="projects__content">
-                <a
-                  href="https://rolling-scopes-school.github.io/anton-gadiyatov-JSFEPRESCHOOL/photofilter/"
-                  target="_blank"
-                  class="project__link"
-                >
-                  <h3 class="project__title">Photofilter</h3>
-                  <p class="project__description">Photofilter project</p>
-                </a>
-                <p class="project__technologies">Html Css JavaScript</p>
-              </div>
-            </div>
-          </section>
-
-          <section class="section certificates" id="certificates">
-            <h2 class="section-title">Certificates</h2>
-
-            <div class="certificate__container bd-grid">
-              <div class="certificate__content">
-                <h3 class="certificate__title">RSschool certificate (2021)</h3>
-                <p>
-                  <a
-                    href="https://app.rs.school/certificate/h27i8auw"
-                    target="_blank"
-                    class="certificate__description"
-                  >
-                    THE ROLLING SCOPES SCHOOL <br >
-                    JS/FE PRE-SCHOOL (JAVASCRIPT)
-                  </a>
-                </p>
-              </div>
-            </div>
-          </section>
-
-          <!-- <section class="section references" id="references">
-            <h2 class="section-title">References</h2>
-
-            <div class="references__container bd-grid">
-              <div class="references__content bd-grid">
-                <span class="references__subtitle">Sr. director</span>
-                <h3 class="references__title">Mr.Mr</h3>
-                <ul class="references__contact">
-                  <li>Phone: 12312312</li>
-                  <li>Email: 123123</li>
-                </ul>
-              </div>
-            </div>
-          </section> -->
-
-          <section class="section languages">
-            <h2 class="section-title">Languages</h2>
-
-            <div class="languages__container">
-              <ul class="languages__content bd-grid">
-                <li class="languages__name">
-                  <span class="languages__circle"></span> Russian
-                  <span class="languages__aditional-info"> (native)</span>
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span> English
-                  <span class="languages__aditional-info"> (B1/B2)</span>
-                </li>
-                <li class="languages__name">
-                  <span class="languages__circle"></span> Deutsch
-                  <span class="languages__aditional-info"> (A1)</span>
-                </li>
-              </ul>
-            </div>
-          </section>
-
-          <section class="interests section">
-            <h2 class="section-title">Interests</h2>
-
-            <div class="interests__container bd-grid">
-              <div class="interests__content">
-                <i class="bx bx-book interests__icon"></i>
-                <span class="interests__name">Reading</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bx-dumbbell interests__icon"></i>
-                <span class="interests__name">Fitness</span>
-              </div>
-              <div class="interests__content">
-                <i class="bx bxs-keyboard interests__icon"></i>
-                <span class="interests__name">Gaming</span>
-              </div>
-            </div>
-          </section>
-
-          <section class="code section">
-            <h2 class="section-title">Code sample</h2>
-            <div class="code__container bd-grid">
-              <figure>
-                <pre class="code__sample"><code class="js">
-                function arrayDiff(a, b) {
-                  const newArr = [];
-                  a.forEach((number) => {
-                    if (!b.includes(number)) newArr.push(number);
-                  })
-                  return newArr
-                }
-              </code>
-              </pre>
-              </figure>
-            </div>
-          </section>
-        </div>
+          </blockquote>
+          <p>
+            In fast changing world, there is only several areas that really
+            pushing the wheel of progress and IT industry is one of them. I
+            really want to participate and make a contribution in human history.
+          </p>
+        </section>
+        <section class="main__experience">
+          <h2 class="main__title">Experience</h2>
+          <p>Code sample:</p>
+          <pre>
+          function solution(str){
+            return str.split('').reverse().join('');
+          }
+          </pre>
+          <p>Codewars:</p>
+          <p>
+            <a
+              href="https://www.codewars.com/users/Anton-Gadiyatov"
+              target="_blank"
+              >https://www.codewars.com/users/Anton-Gadiyatov</a
+            >
+          </p>
+        </section>
+        <section class="main__skills">
+          <h2 class="main__title">Skills</h2>
+          <ul>
+            <li>Html</li>
+            <li>Css</li>
+            <li>JavaScript</li>
+            <li>Git</li>
+          </ul>
+        </section>
       </div>
     </main>
     <footer class="footer">
-      <div class="actual-date">
-        <p>Creation date: <time datetime="2021-09-15">September 2021</time></p>
-      </div>
-      <ul class="footer__links">
-        <li class="footer__link">
-          <a href="https://github.com/Anton-Gadiyatov" target="_blank"
-            ><img
-              class="footer__logo-git"
-              src="./src/img/github.svg"
-              alt="link to github"
-          ></a>
-        </li>
-        <li class="footer__link">
-          <a href="https://rs.school/js/" target="_blank"
-            ><img
-              class="footer__logo-rs"
-              src="./src/img/rs_school_js.svg"
-              alt="link to rs school"
-          ></a>
-        </li>
-      </ul>
-    </footer>
-    <a href="# " class="scrolltop" id="scroll-top">
-      <i class="bx bxs-up-arrow-alt scrolltop__icon"></i>
-    </a>
+    <div class="actual-date">
+      <p>Creation date: <time datetime="2021-03-07">March 7</time></p>
+    </div>
+    <div class="links">
+      <a href="https://github.com/Anton-Gadiyatov" target="_blank"><img class="logo" src="./img/github.svg" alt="link to github"></a>
+      <a href="https://rs.school/js/" target="_blank"><img class="logo" src="./img/rs_school_js.svg" alt="link to rs school"></a>
+      <a href="#" target="_blank"><img class="logo" src="./img/youtube.svg" alt="link to youtube"></a></div>
+  </footer>
   </body>
 </html>
